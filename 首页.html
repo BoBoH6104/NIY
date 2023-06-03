@@ -2,24 +2,28 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>About-EXO</title>
-		<link rel="stylesheet" href="../css/149.css">
-		<link rel="stylesheet" href="index.css"/>
+		<title>EXO-PLANET</title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		
+		
 		<style type="text/css">
 			*{
 			 margin:0;
 			 padding:0;
 			 }
 			#box{
-				width: 1200px;
-				height: 2000px;
-				background: url("");
+			width:1200px;
+			height:2135px;
+			background:url("images/bjt.jpg");
+			 margin:0px auto;
 			}
 			#d1{
-			 
+			 margin:0;padding:0;
+			width:1200px;
+			height:300px;
+			background:beige;
 			}
 			.slider img{
-				width: 1200px;
 			 display:block;
 			 overflow:hidden;
 			 }
@@ -38,25 +42,25 @@
 			 overflow:hidden;
 			 display:block;
 			 }
-			 .inner dl {
+			 .inner ul {
 			 width:1200%;
 			 position:absolute;
 			 top:0;
 			 left:0;
 			 display:block;
 			 }
-			 .inner dl dt{
+			 .inner ul li {
 			 float:left;
 			display:block;
 			list-style:none;
 			 }
-			 /*.slider .ol {
+			 .slider ol {
 			 position:absolute;
 			 left:55%;
 			 margin-left:-90px;
 			 bottom:15px;
 			}
-			 .slider .ol dd{
+			 .slider ol li{
 			 list-style:none;
 			 float:left;
 			 width:18px;
@@ -67,10 +71,10 @@
 			 line-height:18px;
 			 cursor:pointer;
 			 }
-			 .slider .ol dd.current{
+			 .slider ol li.current{
 			 background-color:orange;
-			 }*/
-			.inner dl dt{
+			 }
+			.inner ul li{
 			list-style:none;
 			}
 			#wzm{
@@ -85,19 +89,19 @@
 				height: 40px;
 				background: #2e2833;
 			}
-			.header_nav dl{
+			.header_nav ul{
 				padding-left: 70px;/*左内边距*/
 			}
-			.header_nav dt{
+			.header_nav li{
 				float: left;
 				list-style: none;
 				padding-left: 76px;
 				padding-right: 65px;
 				padding-top: 13px;/*每个格子的高度*/
-				height: 30px;
+				height: 39px;
 				border: 1px;
 			}
-			.header_nav dt:hover{
+			.header_nav li:hover{
 				background-color: #86322c;/*鼠标放置时背景颜色*/
 			}
 			.header_nav a{
@@ -107,217 +111,485 @@
 				font-family: "宋体";
 			}
 			
-			#d2{
+			.center_top{
 				width: 1200px;
-				height: 1650px;
-				background: url("images/bjt.jpg");
-				margin-top: 0px;
+				height: 565px;
 				background: ;
 			}
-			.ding{
-				width: 1200px;
-				height: 100px;
-				background: ;
-			}
-			.ding p{
+			.center_top_left{
 				float: left;
-				font-weight: bold;
-				margin-top: 25px;
-				margin-left: 520px;
-				text-align: center;
-				font-size: 30px;
-				color: #803223;
-				font-family: "微软雅黑";
+				width: 370px;
+				height:543px;
+				background: ;
+				margin-top: 15px;
+				margin-left: 25px;
+				margin-right: 10px;
 			}
-			.ding h1{
-				width: 1200px;
-				text-align: center;
-				font-weight: bold;
-				font-size: 20px;
-				color: #803223;
-				font-family: "微软雅黑";
+			.center_top_left img{
+				float: left;
+				width: 370px;
+				height: 543px;
+				margin-top: 0px;
+				margin-left: 0px;
 			}
 			
-			/*1*/
-			.top{
-				width: 1200px;
-				height: 520px;
-				background: ;
-			}
-			.bh1{
+			.center_top_right{
 				float: left;
-				width: 350px;
-				height: 450px;
-				background:lavenderblush;
-				margin-top: 50px;
+				width: 766px;
+				height:545px;
+				background: ;
+				margin-top: 14px;
+				margin-left:;
+				border:3px #86322c solid;
+			}
+			.right_top{
+				float: left;
+				width: 680px;
+				height: 547px;
+				background: ;
 				margin-left: 40px;
 				
 			}
-			.bh1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
+			.right_top p{
+				color: white;
+				font-size: 17px;
+				margin-left: 5px;
+				line-height: 36px;
+			}
+			/*.right_bottom{
+				float: left;
+				width: 660px;
+				height: 160px;
+				background: ;
+				margin-top: 0px;
+				margin-left: 0px;
+			}
+			.right_bottom img{
+				float: left;
+				width: 660px;
+				height: 160px;
+				margin-top: 0px;
+				margin-left: 0px;
+			}*/
+			
+			.center_bottom{
+				width: 1200px;
+				height: 1100px;
+				background:;
+			}
+			.center_bottom_top{
+				width: 100px;
+				height: 30px;
+				margin-top: 15px;
+				background:;
+			}
+			.center_bottom_top .top_wz{
+				float: left;
+				width: 100px;
+				height: 25px;
+				border: 3px #5f4b6f solid;
+				border-radius: 30px;
+				margin-top: -7px;
+				margin-left: 545px;
+				background: #2e2833;
+			}
+			.center_bottom_top .top_wz p{
+				float: left;
+				font-size: 18px;
+				color: white;
+				font-family: "宋体";
+				margin-top: px;
+				margin-left: 11px;
+			}
+			
+			.center_bottom_up{
+				width: 1200px;
+				height: 375px;
+				background:;
 				
 			}
-			.bh1 .up img{
-				width: 350px;
-				height: 210px;
+			/*.center_bottom_up_1{
+				float: left;
+				width: 285px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-left: 25px;
+			}
+			.center_bottom_up_1 p{
+				float: left;
+				width: 285px;
+				height: 310px;
+				background: ;
+				border: 2px #8d1e3a solid;
+				border-radius:15px;
+				color: white;
 				
 			}
-			.cy1{
+			.center_bottom_up_2{
 				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 50px;
-				margin-left: 35px;
-				background:lavenderblush;
-			}
-			.cy1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
-			}
-			.cy1 .up img{
-				width: 350px;
-				height: 210px;
-			}
-			
-			.sx1{
-				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 50px;
-				margin-left:35px;
-				background:lavenderblush;
-			}
-			.sx1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
-			}
-			.sx1 .up img{
-				width: 350px;
-				height: 210px;
-			}
-			
-			/*2*/
-			.center{
-				width: 1200px;
-				height: 520px;
+				width: 285px;
+				height: 310px;
 				background: ;
+				border-radius: 15px;
+				margin-left: 1px;
 			}
-			.jm1{
+			.center_bottom_up_2 p{
 				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 30px;
-				margin-left:40px;
-				background:lavenderblush;
+				width: 285px;
+				height: 310px;
+				background:;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 1px;
+				color: white;
 			}
-			.jm1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
-			}
-			.jm1 .up img{
-				width: 350px;
-				height: 210px;
-			}
-			
-			.kai1{
+			.center_bottom_up_3{
 				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 30px;
-				margin-left:35px;
-				background:lavenderblush;
-			}
-			.kai1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
-			}
-			.kai1 .up img{
-				width: 350px;
-				height: 210px;
-			}
-			.do1{
-				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 30px;
-				margin-left:35px;
-				background:lavenderblush;
-			}
-			.do1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
-			}
-			.do1 .up img{
-				width: 350px;
-				height: 210px;
-			}
-			
-			/*3*/
-			.bottom{
-				width: 1200px;
-				height: 520px;
+				width: 285px;
+				height: 310px;
 				background: ;
+				border-radius: 15px;
+				margin-left: 2px;
 			}
-			.xm1{
+			.center_bottom_up_3 p{
 				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 0px;
-				margin-left:40px;
-				background:lavenderblush;
+				width: 285px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 2px;
+				color: white;
 			}
-			.xm1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
+			.center_bottom_up_4{
+				float: left;
+				width: 285px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-left: 2px;
 			}
-			.xm1 .up img{
-				width: 350px;
-				height: 210px;
+			.center_bottom_up_4 p{
+				float: left;
+				width: 285px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 2px;
+				color: white;
+			}*/
+			
+			/*轮播*/
+			.center_bottom_middle{
+				width: 1198px;
+				height: 379px;
+				background: ;
+				border: 2px #2e2833 dashed;
 			}
 			
-			/*8*/
-			.chen1{
+			.Jf{
+				width: 1198px;
+				height: 375px;
+				overflow: hidden;
+			}
+			.JP{
+				width: 2760px;
+				height: 375px;
+				animation: lunbo 25s infinite linear;
+			}
+			.tupian{
+				width: 300px;
+				height: 375px;
+				display: inline-block;
+			}
+			.tupian img{
+				width: 300px;
+				height: 375px;
+				display: inline-block;
+			}
+			.margin1{
+				margin-left: -5px;
+			}
+			@keyframes lunbo{
+				0%{
+						transform: translateX(0px);
+					}
+					10%{
+						transform: translateX(-50px);
+					}
+					15%{
+						transform: translateX(-100px);
+					}
+					20%{
+						transform: translateX(-200px);
+					}
+					25%{
+						transform: translateX(-300px);
+					}
+					30%{
+						transform: translateX(-400px);
+					}
+					35%{
+						transform: translateX(-500px);
+					}
+					40%{
+						transform: translateX(-600px);
+					}
+					45%{
+						transform: translateX(-700px);
+					}
+					50%{
+						transform: translateX(-800px);
+					}
+					55%{
+						transform: translateX(-900px);
+					}
+					60%{
+						transform: translateX(-1000px);
+					}
+					65%{
+						transform: translateX(-1100px);
+					}
+					70%{
+						transform: translateX(-1200px);
+					}
+					75%{
+						transform: translateX(-1300px);
+					}
+					80%{
+						transform: translateX(-1400px);
+					}
+					85%{
+						transform: translateX(-1500px);
+					}
+					90%{
+						
+					}
+					95%{
+						
+					}
+					100%{
+						
+					}
+				}
+			
+			/*轮播*/
+			
+			.center_bottom_down{
+				width: 1200px;
+				height: 375px;
+				background: ;
+				margin-top: px;
+			}
+			/*.center_bottom_down_5{
 				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 0px;
-				margin-left:35px;
-				background:lavenderblush;
+				width: 228px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-left: 25px;
+				margin-top: 10px;
 			}
-			.chen1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
+			.center_bottom_down_5 p{
+				float: left;
+				width: 228px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				color: white;
+				margin-top: 10px;
+				
 			}
-			.chen1 .up img{
-				width: 350px;
-				height: 210px;
+			.center_bottom_down_6{
+				float: left;
+				width: 228px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-top: 10px;
+				margin-left: 1px;
+			}
+			.center_bottom_down_6 p{
+				float: left;
+				width: 228px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 1px;
+				color: white;
+				margin-top: 10px;
+			}
+			.center_bottom_down_7{
+				float: left;
+				width: 228px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-top: 10px;
+				margin-left: 2px;
+			}
+			.center_bottom_down_7 p{
+				float: left;
+				width: 228px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 2px;
+				color: white;
+				margin-top: 10px;
+			}
+			.center_bottom_down_8{
+				float: left;
+				width: 228px;
+				height: 310px;
+				background: ;
+				border-radius: 15px;
+				margin-top: 10px;
+				margin-left: 2px;
+			}
+			.center_bottom_down_8 p{
+				float: left;
+				width: 228px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 2px;
+				color: white;
+				margin-top: 10px;
+			}
+			.center_bottom_down_9{
+				float: left;
+				width: 228px;
+				height: 310px;
+				background:;
+				border-radius: 15px;
+				margin-top: 10px;
+				margin-left: 2px;
+			}
+			.center_bottom_down_9 p{
+				float: left;
+				width: 228px;
+				height: 310px;
+				border: 2px #8d1e3a solid;
+				border-radius: 15px;
+				margin-left: 2px;
+				color: white;
+				margin-top: 10px;
+			}*/
+			
+			/*图片*/
+			
+			div.img {
+			    border: 1px solid #8d1e3a;
+				width: 280px;
+				margin-left: 23px;
+				margin-top: 6px;
+				border-radius: 25px;
+				background: ;
+				height: 339px;
 			}
 			
-			.zyx1{
-				float: left;
-				width: 350px;
-				height: 450px;
-				margin-top: 0px;
-				margin-left:35px;
-				background:lavenderblush;
+			div.img:hover {
+			    border: 2px solid #2e2833;
 			}
-			.zyx1 .up{
-				width: 350px;
-				height: 210px;
-				background: lightsteelblue;
+			
+			div.img img {
+			    width: 276px;
+			    height: 335px;
+				margin-left: px;
+				border-radius: 25px;
 			}
-			.zyx1 .up img{
-				width: 350px;
-				height: 210px;
+			p.mz{
+				text-align: center;
+			}
+			div.desc {
+			   padding: 2px;
+			   text-align: ;
+			   color: aliceblue;
+			   font-family: "楷体";
+			   font-size: 18px;
+			   margin-left: 8px;
+			   line-height: 25px;
+			}
+			
+			*{
+			    box-sizing: border-box;
+			}
+			
+			.responsive {
+			    padding: px;
+			    float: left;
+			    width: 290px;
+			}/*key*/
+			
+			@media only screen and (max-width: 700px){
+			    .responsive {
+			        width: 285px;
+			        margin: 6px 0;
+			    }
+			}
+			
+			@media only screen and (max-width: 500px){
+			    .responsive {
+			        width: 285px;
+			    }
+			}
+			
+			div.img1 {
+			    border: 1px solid #8d1e3a;
+				width: 229px;
+				margin-left: 23px;
+				margin-top: 35px;
+				border-radius: 25px;
+				background: ;
+				height: 339px;
+			}
+			
+			div.img1:hover {
+			    border: 2px solid #2e2833;
+			}
+			
+			div.img1 img {
+			    width: 225px;
+			    height: 335px;
+				margin-left: px;
+				border-radius: 25px;
+			}
+			p.mz{
+				text-align: center;
+			}
+			div.desc1 {
+			    padding: 2px;
+			    text-align: ;
+				color: aliceblue;
+				font-family: "楷体";
+				font-size: 18px;
+				margin-left: 8px;
+				line-height: 25px;
+			}
+
+			
+			*{
+			    box-sizing: border-box;
+			}
+			
+			.responsive1 {
+			    padding: 0 0px;
+			    float: left;
+			    width: 230px;
+			}/*key*/
+			
+			@media only screen and (max-width: 700px){
+			    .responsive1 {
+			        width: 285px;
+			        margin: 6px 0;
+			    }
+			}
+			
+			@media only screen and (max-width: 500px){
+			    .responsive1 {
+			        width: 285px;
+			    }
 			}
 			
 			/*尾部*/
@@ -353,6 +625,7 @@
 				height: 75px;
 				margin-top: -72px;
 			}
+			
 		</style>
 	</head>
 	<body>
@@ -362,25 +635,24 @@
 			  <div class="lbt">
 			  <div class="slider" id="lbt">
 			 <div class="inner">
-			 <dl id="wzm" >
-			<dt><a href="#"><img src="images/nav1.jpg" alt=""/></a></dt>
-			<!--<dt><a href="#"><img src="images/nav.jpg" alt=""/></a></dt>
-			<dt><a href="#"><img src="images/nav1.jpg" alt=""/></a></dt>-->
-			</dl>
+			 <ul id="wzm" >
+			<li><a href="#"><img src="images/nav1.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/nav.jpg" alt=""/></a></li>
+			<li><a href="#"><img src="images/nav-3.jpg" alt=""/></a></li>
+			</ul>
 			</div>
-			
-			<!--<ol>
-			<dt class="current">1</dt>
-			<dt>2</dt>
-			<dt>3</dt>
-			</ol>-->
-			</div>
+			<ol>
+			<li class="current">1</li>
+			<li>2</li>
+			<li>3</li>
+			</ol>
 			</div>
 			</div>
-			<!--<script>
+			</div>
+			<script>
 			var jd = document.getElementById("lbt");
 			var wzm =lbt.children[0].children[0];
-			var ol=lbt.children[0];
+			var ol=lbt.children[1];
 			var olLis = ol.children;
 			var leader =0,target=0;
 			for(var i=0;i<olLis.length;i++)
@@ -399,140 +671,326 @@
 						leader=leader+(target-leader)/10;
 						wzm.style.left=leader+"px";
 						},30);
-				</script>-->
+				</script>
 				
 			<div class="header">
 				<div class="header_nav">
-					<dl>
-						<dt><a href="首页.html">首页</a></dt>
-						<dt><a href="EXO.html">关于EXO</a></dt>
-						<dt><a href="爱丽.html">关于EXO-L</a></dt>
-						<dt><a href="舞台.html">舞台介绍</a></dt>
-						<dt><a href="注册登录.html">注册登录</a></dt>
-					</dl>
+					<ul>
+						<li><a href="首页.html">首页</a></li>
+						<li><a href="EXO.html">关于EXO</a></li>
+						<li><a href="爱丽.html">关于EXO-L</a></li>
+						<li><a href="舞台.html">舞台介绍</a></li>
+						<li><a href="注册登录.html">注册登录</a></li>
+					</ul>
 				</div>
 			</div>
 			
-			<!--<div class="container">
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-				<div class="img"></div>
-			</div>-->
-			
-			<div id="d2">
-				<div class="ding">
-					<p>EXOPLANET</p>
-					<h1>——————————————————————————————————————————————————————</h1>
-				</div>
-				<div class="top">
-					<div class="bh1">
-						<div class="up">
-							<img src="im/pho2/5/b2.jpg"/>
-						</div>
-						<div class="down">
-							<span>边伯贤(Byhun Baek hyun)</span>
-							<p></p>
-						</div>
+			<div class="center">
+				<div class="center_top">
+					<div class="center_top_left">
+						<img src="img-1/8.jpg"/>
 					</div>
-					<div class="cy1">
-						<div class="up">
-							<img src="im/pho2/5/c3.jpg"/>
+					<div class="center_top_right">
+						<div class="right_top"><!--———————————— ————————————&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;-->
+						<p>&ensp;&ensp;~·~·~·~·~·~·~·~·~·~·~·~·~·~欢迎来到EXO-PLANET~·~·~·~·~·~·~·~·~·~·~·~·~·~</p></n>
+						<p>&emsp;团队名称:EXO(엑소)&ensp;&ensp;出道日期:2012年4月8日&ensp;&ensp;应援色:宇宙拿铁色&ensp;&ensp;粉丝名:EXO-L</p></n>
+						<p>&emsp;EXO这个名字从意为太阳系以外的外部行星EXOPLANET一词中得来，蕴含了他们是从未知的世界来的新星之意。</p></n>
+						<p>&emsp;现以金珉锡、金俊勉、边伯贤、金钟大、朴灿烈、都敬秀、金钟仁、吴世勋、张艺兴9名成员的形式展开活动。
+						2012年4月8日以12人组形式推出首张迷你专辑《MAMA》正式出道。
+						2013年6月3日发行首张正规专辑《XOXO（Kiss&Hug）》同年，首张正规专辑后续主打曲《咆哮(Growl)》被美国Billboard榜单选为2013最佳K-Pop音乐;12月9日发行首张冬日专辑《十二月的奇迹》。
+						2014年5月7日发行第二张迷你专辑《上瘾》。2015年3月30日发行第二张正规专辑《EXODUS》；6月3日发行正规二辑改版专辑《LOVE ME RIGHT》；12月10日发行第二张冬日特别专辑《SING FOR YOU》。
+						2016年6月9日发行第三张正规专辑《EX'ACT》；8月18日发行正规三辑后续专辑《LOTTO》；12月18日发行第三张冬季特别专辑《For Life》。
+						2017年7月18日发行第四张正规专辑《THE WAR》；9月5日发布正规四辑后续专辑《THE POWER OF MUSIC》；12月21日发行第四张冬日特别专辑《Universe》。
+						</p>
 						</div>
-						<div class="down">
-							<p></p>
-						</div>
-					</div>
-					<div class="sx1">
-						<div class="up">
-							<img src="im/pho2/5/s3.jpg"/>
-						</div>
-						<div class="down">
-							<p></p>
-						</div>
+						<!--<div class="right_bottom">
+							<img src="images/15.jpg"/>
+						</div>-->
 					</div>
 				</div>
 				
-				<div class="center">
-					<div class="jm1">
-						<div class="up">
-							<img src="im/pho2/5/j2.jpg"/>
-						</div>
-						<div class="down">
-							<p></p>
+				<div class="center_bottom">
+					<div class="center_bottom_top">
+						<div class="top_wz">
+							<p>主要成员</p>
 						</div>
 					</div>
-					<div class="kai1">
-						<div class="up">
-							<img src="im/pho2/5/k3.jpg"/>
+					
+					<div class="center_bottom_up">
+						<!--<div class="center_bottom_up_1">
+							<p>伯贤:</p>
 						</div>
-						<div class="down">
-							<p></p>
+						<div class="center_bottom_up_2">
+							<p>灿烈:</p>
 						</div>
-					</div>
-					<div class="do1">
-						<div class="up">
-							<img src="im/pho2/5/d3.jpg"/>
+						<div class="center_bottom_up_3">
+							<p>世勋:</p>
 						</div>
-						<div class="down">
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<div class="bottom">
-					<div class="xm1">
-						<div class="up">
-							<img src="im/pho2/5/x3.jpg"/>
-						</div>
-						<div class="down">
-							<p></p>
-						</div>
-					</div>
-					<div class="chen1">
-						<div class="up">
-							<img src="im/pho2/5/chen3.jpg"/>
-						</div>
-						<div class="down">
-							<p></p>
-						</div>
-					</div>
-					<div class="zyx1">
-						<div class="up">
-							<img src="im/pho2/5/zyx3.jpg"/>
-						</div>
-						<div class="down">
-							<p></p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-				<div class="container">
-				    <ul>
-				        <li><img src="im/pho2/1/bbh.jpg" alt=""/></li>
-				        <li><img src="im/pho2/1/cl.jpg" alt=""/></li>
-				        <li><img src="im/pho2/1/sx.jpg" alt=""/></li>
-				        <li><img src="im/pho2/1/jm.jpg" alt=""/></li>
-						<li><img src="im/pho2/1/zr.jpg" alt=""/></li>
-						<li><img src="im/pho2/1/dd.jpg" alt=""/></li>
-						<li><img src="im/pho2/1/mx.jpg" alt=""/></li>
-						<li><img src="im/pho2/1/zd.jpg" alt=""/></li>
-						<li><img src="im/pho2/1/zyx.jpg" alt=""/></li>
-				    </ul>
-				    <div class="btns">
-				        <div class="btn">← 向左走</div>
-				        <div class="btn">向右走 →</div>
-				    </div>
-				</div>
+						<div class="center_bottom_up_4">
+							<p>俊勉:</p>
+						</div>-->
 						
-				<script src="../js/149.js"></script>
-			
-			
+						
+						<div class="responsive">
+						  <div class="img">
+						    <!--<a target="_blank" href="im/pho2/2/bx.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/bx.jpg" alt="Trolltunga Norway" width="300" height="200">
+						    </a>-->
+						    <div class="desc">
+								<p class="mz">边伯贤</p>
+								<p>血型:O型</p>
+								<p>国籍:韩国</p>
+								<p>身高:174cm</p>
+								<p>外文名:변백현、BAEK HYUN</p>
+								<p>星座:金牛座</p>
+								<p>队内担当:主唱</p>
+								<p>出生日期:1992年5月6日</p>
+								<p>出生地:韩国京畿道富川市</p>
+								<p>毕业院校:明知大学</p>
+								<p>职业:歌手、演员、主持</p>
+								<p>经济公司:S.M.Entertainment</p>
+								<p>所属组合:EXO、EXO-K、EXO-CBX</p>
+								</div>
+						  </div>
+						</div>
+						 
+						<div class="responsive">
+						  <div class="img">
+						    <!--<a target="_blank" href="im/pho2/2/cy.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/cy.jpg" alt="Forest" width="600" height="400">
+						    </a>-->
+						    <div class="desc">
+							<p class="mz">朴灿烈</p>
+							<p>血型:A型</p>
+							<p>国籍:韩国</p>
+							<p>身高:185cm</p>
+							<p>外文名:박찬열、Park Chanyeol</p>
+							<p>星座:射手座</p>
+							<p>队内担当:主Rapper、门面担当、副主唱</p>
+							<p>出生日期:1992年11月27日</p>
+							<p>出生地:韩国首尔</p>
+							<p>毕业院校:仁荷大学</p>
+							<p>职业:歌手、演员</p>
+							<p>所属组合:EXO、EXO-K、EXO-SC</p>
+							</div>
+						  </div>
+						</div>
+						 
+						<div class="responsive">
+						  <div class="img">
+						    <!--<a target="_blank" href="im/pho2/2/sx.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/sx.jpg" alt="Northern Lights" width="600" height="400">
+						    </a>-->
+						    <div class="desc">
+							<p class="mz">吴世勋</p>
+							<p>血型:O型</p>
+							<p>国籍:韩国</p>
+							<p>身高:184cm</p>
+							<p>外文名:오세훈、Oh SeHun</p>
+							<p>星座:白羊座</p>
+							<p>队内担当:领舞、Rap、门面担当</p>
+							<p>出生日期:1994年4月12日</p>
+							<p>出生地:韩国首尔特别市</p>
+							<p>毕业院校:首尔演艺学院</p>
+							<p>职业:歌手、演员</p>
+							<p>经济公司:S.M.Entertainment</p>
+							<p>所属组合:EXO、EXO-K、EXO-SC</p>
+							</div>
+							
+						  </div>
+						</div>
+						 
+						<div class="responsive">
+						  <div class="img">
+						    <!--<a target="_blank" href="im/pho2/2/jm.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/jm.jpg" alt="Mountains" width="600" height="400">
+						    </a>-->
+						    <div class="desc">
+							<p class="mz">金俊勉</p>
+							<p>血型:AB型</p>
+							<p>国籍:韩国</p>
+							<p>身高:174cm</p>
+							<p>外文名:김준면、SUHO</p>
+							<p>星座:双子座</p>
+							<p>出生日期:1991年5月22日</p>
+							<p>出生地:韩国首尔特别市</p>
+							<p>职业:歌手、演员、MC</p>
+							<p>经济公司:S.M.Entertainment</p>
+							<p>所属组合:EXO、EXO-K</p>
+							<p>队内担当:EXO队长、EXO-K队长、副主唱</p>
+							</div>
+						  </div>
+						</div>
+						
+						 
+						
+					</div>
+					
+					<div class="center_bottom_middle">
+						
+						<div class="Jf">
+							<div class="JP">
+								<div class="tupian" style="background-color: paleturquoise;">
+									<img src="im/pho2/2/bx.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: hotpink;">
+									<img src="im/pho2/2/cy.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: teal;">
+									<img src="im/pho2/2/sx.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/jm.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/kai.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/do.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/mx.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/chen.jpg"/>
+								</div>
+								<div class="tupian margin1" style="background-color: yellowgreen;">
+									<img src="im/pho2/2/yx.jpg"/>
+								</div>
+								
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					<div class="center_bottom_down">
+						<!--<div class="center_bottom_down_5">
+							<p>钟仁</p>
+						</div>
+						<div class="center_bottom_down_6">
+							<p>暻秀</p>
+						</div>
+						<div class="center_bottom_down_7">
+							<p>敏锡</p>
+						</div>
+						<div class="center_bottom_down_8">
+							<p>钟大</p>
+						</div>
+						<div class="center_bottom_down_9">
+							<p>艺兴</p>
+						</div>-->
+						<div class="responsive1">
+						  <div class="img1">
+						    <!--<a target="_blank" href="im/pho2/2/kai.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/kai.jpg" alt="Trolltunga Norway" width="300" height="200">
+						    </a>-->
+						    <div class="desc1">
+							<p class="mz">金钟仁</p>
+							<p>血型:A型</p>
+							<p>国籍:韩国</p>
+							<p>身高:182cm</p>
+							<p>外文名:김종인、KAI、Kim Jong In、카이</p>
+							<p>星座:摩羯座</p>
+							<p>队内担当:主舞</p>
+							<p>出生日期:1994年1月14日</p>
+							<p>出生地:韩国首尔</p>
+							<p>职业:歌手、演员</p>
+							<p>所属组合:EXO、EXO-K</p>
+							<p>别名:啾茵、开开、妮妮</p>
+							</div>
+						  </div>
+						</div>
+						 
+						<div class="responsive1">
+						  <div class="img1">
+						    <!--<a target="_blank" href="im/pho2/2/do.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/do.jpg" alt="Forest" width="600" height="400">
+						    </a>-->
+						    <div class="desc1">
+							<p class="mz">都暻秀</p>
+							<p>血型:A型</p>
+							<p>国籍:韩国</p>
+							<p>身高:174cm</p>
+							<p>外文名:도경수、D.O.、Doh Kyungsoo</p>
+							<p>星座:摩羯座</p>
+							<p>出生日期:1993年1月12日</p>
+							<p>队内担当:主唱、EXO-K第三领舞、料理担当</p>
+							<p>出生地:韩国京畿道日山</p>
+							<p>职业:歌手、演员</p>
+							<p>所属组合:EXO、EXO-K</p>
+							</div>
+						  </div>
+						</div>
+						 
+						<div class="responsive1">
+						  <div class="img1">
+						    <!--<a target="_blank" href="im/pho2/2/mx.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/mx.jpg" alt="Northern Lights" width="600" height="400">
+						    </a>-->
+						    <div class="desc1">
+							<p class="mz">金珉锡</p>
+							<p>血型:B型</p>
+							<p>国籍:韩国</p>
+							<p>身高:175cm</p>
+							<p>外文名:김민석、XIUMIN</p>
+							<p>星座:白羊座</p>
+							<p>出生日期:1990年3月26日</p>
+							<p>队内担当:副主唱、副领舞、童颜担当</p>
+							<p>出生地:韩国京畿道九里市仁仓洞</p>
+							<p>所属组合:EXO、EXO-M、EXO-CBX</p>
+							</div>
+						  </div>
+						</div>
+						 
+						<div class="responsive1">
+						  <div class="img1">
+						    <!--<a target="_blank" href="im/pho2/2/chen.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/chen.jpg" alt="Mountains" width="600" height="400">
+						    </a>-->
+						    <div class="desc1">
+							<p class="mz">金钟大</p>
+							<p>血型:B型</p>
+							<p>国籍:韩国</p>
+							<p>身高:178cm</p>
+							<p>外文名:김종대、Kim Jong Dae</p>
+							<p>星座:处女座</p>
+							<p>出生日期:1992年9月21日</p>
+							<p>队内担当:主唱、高音担当</p>
+							<p>出生地:韩国京畿道始兴市</p>
+							<p>职业:歌手</p>
+							<p>所属组合:EXO、EXO-M、EXO-CBX</p>
+							</div>
+						  </div>
+						</div>
+						<div class="responsive1">
+						  <div class="img1">
+						    <!--<a target="_blank" href="im/pho2/2/yx.jpg">
+						      <img decoding="async" loading="lazy" src="im/pho2/2/yx.jpg" alt="Mountains" width="600" height="400">
+						    </a>-->
+						    <div class="desc1">
+							<p class="mz">张艺兴</p>
+							<p>生肖:羊</p>
+							<p>国籍:中国</p>
+							<p>身高:176cm</p>
+							<p>外文名:레이、LAY</p>
+							<p>粉丝名:兴迷、Xback</p>
+							<p>星座:天秤座</p>
+							<p>出生日期:1991年10月7日</p>
+							<p>出生地:湖南省长沙市</p>
+							<p>职业:歌手、演员、制作人</p>
+							<p>经济公司:张艺兴工作室</p>
+							<p>队内担当:主领舞、副主唱、乐器担当</p>
+							
+							</div>
+							
+						  </div>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div><!--center-->
 			
 			<div class="footer">
 				<div class="footer_wz">
@@ -546,7 +1004,24 @@
 					<img src="im/pho2/f.jpg"/>
 					</div>
 				</div>
-			</div><!--footer-->
+			</div>
+			
+			<!--<div class="footer">
+				<div class="footer_logo1">
+					<img src="im/pho2/f.jpg"/>
+				</div>
+				<div class="footer_logo2">
+					<img src="im/pho2/f.jpg"/>
+				</div>
+				<div class="footer_wz">
+					<p>班级：软件技术4班&ensp;&ensp;姓名：马茵茵&ensp;&ensp;学号：202200310140</p>
+				</div>
+			</div>-->
+			
+			
+			 
+			
 		</div><!--box-->
+		  
 	</body>
 </html>
